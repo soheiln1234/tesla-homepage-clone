@@ -1,0 +1,34 @@
+.car__details {
+  position: absolute;
+  top: 15vh;
+  z-index: 999999;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.car__title {
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.car__description,
+.car__description a {
+  color: #575757;
+}
+
+.description {
+  width: 100%;
+}
+
+@media (max-width: 1300px) {
+  .car__title {
+    font-size: 1rem;
+  }
+}

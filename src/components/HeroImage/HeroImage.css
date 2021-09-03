@@ -1,0 +1,34 @@
+.heroImage {
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.hero-container {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.heroImage::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.heroImage {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
